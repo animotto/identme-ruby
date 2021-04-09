@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+
+require "identme"
+
+begin
+  ident = IdentMe.ident
+rescue
+  puts "Sorry, can't ident you"
+  exit
+end
+
+out = ident[:ip]
+out += " (#{ident[:name]})" unless ident[:name].nil?
+puts out
+
