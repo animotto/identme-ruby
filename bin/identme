@@ -1,6 +1,8 @@
 #!/usr/bin/env ruby
 
-require "identme"
+# frozen_string_literal: true
+
+require 'identme'
 
 begin
   ident = IdentMe.ident
@@ -12,4 +14,3 @@ end
 out = ident[:ip]
 out += " (#{ident[:name]})" unless ident[:name].nil?
 puts out
-
