@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.summary     = "Idents your IP address"
   s.authors     = ["anim"]
   s.email       = "me@telpart.ru"
-  s.homepage    = "https://github.com/animotto/ruby-identme"
+  s.homepage    = "https://github.com/animotto/identme-ruby"
   s.files       = ["lib/identme.rb"]
   s.executables = ["identme"]
 end
